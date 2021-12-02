@@ -49,6 +49,7 @@
         "password": " 32 passphrase ",
         "ccxt_config": {
             "enableRateLimit": false,
+            "timeout": 60000,
             "urls": {
                 "api": {
                     "public": "http://127.0.0.1:8089/kucoin",
@@ -57,7 +58,8 @@
             }
         },
         "ccxt_async_config": {
-            "enableRateLimit": false
+            "enableRateLimit": false,
+            "timeout": 60000
         },
         "pair_whitelist": [
             "BTC/USDT",
