@@ -66,3 +66,66 @@ example telegram command:
 # profit and dry-run results:
 http://hippocritical.ddns.net:3000/
  
+# freqtrade-kucoin-proxy
+
+### download
+1. ```cd ~/freqtrade/```
+2. ```wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.11/freqtrade-proxy-linux-arm64```
+3. ```sudo chmod +x freqtrade-proxy-linux-arm64```
+
+### making it as service for autostart
+1. ```cd /etc/systemd/system``` 
+2. ```sudo nano prox.service``` 
+3. ```copy the text below, in it```
+```
+[Unit]
+Description=proxy freq autostart
+StartLimitIntervalSec=30
+StartLimitBurst=2
+FailureAction=reboot
+
+[Service]
+User=root
+Type=simple
+ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 -port 8089
+Restart=always
+RemainAfterExit=yes
+RestartSec=5
+Restart=on-failure
+ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
+
+[Install]
+WantedBy=multi-user.target
+```
+4. ```ctrl+s,ctrl+x```
+5. ```sudo systemctl daemon-reload```
+
+### starting the proxy service
+6. ```sudo systemctl start prox.service```
+### check for status
+7. ```sudo systemctl status prox.service```
+
+
+#### change config.json in root/freqtrade
+
+```
+    "exchange": {
+        "name": "kucoin",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": false,
+            "timeout": 60000,
+            "urls": {
+                "api": {
+                    "public": "http://127.0.0.1:8089/kucoin",
+                    "private": "http://127.0.0.1:8089/kucoin"
+                }
+            }
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": false,
+            "timeout": 60000
+```
+### Author: 
+https://github.com/mikekonan/freqtrade-proxy
