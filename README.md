@@ -23,8 +23,8 @@ sudo apt-get install libhdf5-serial-dev
 
 # strategy installation
 9. ```cd ~```
-10. ```git clone https://github.com/liquidmind313/freqtrade-set.git```
-11. ```cd freqtrade-set/NFi-772-KC```
+10. ```git clone https://github.com/liquidmind313/codename_313.git```
+11. ```cd codename_313/ XY```
 12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
 # install nano
@@ -33,7 +33,7 @@ sudo apt-get install libhdf5-serial-dev
 15. ```cd```
 
 # copy over the config file !
-15. ```cd ~/freqtrade-set/```
+15. ```cd ~/codename_313/```
 16. ```sudo cp config.json ../freqtrade```
 17. paste in your API and Telegram keys
 18. ```ctrl+x,s``` 
