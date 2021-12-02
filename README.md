@@ -55,7 +55,7 @@ sudo apt-get install libhdf5-serial-dev
 ```sudo timedatectl set-timezone Asia/Tokyo```
 
 # starting the bot
-37. ```freqtrade trade --strategy NostalgiaForInfinityNext```
+37. ```freqtrade trade --strategy NostalgiaForInfinityX```
 38. press ```ctrl+a+d```
 # check telegram for status and start
 
