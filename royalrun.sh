@@ -1,13 +1,12 @@
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
-git clone https://github.com/freqtrade/freqtrade.git
-cd freqtrade
+git clone https://github.com/freqtrade/freqtrade.git ../
+cd ~/freqtrade/
 git checkout stable
 sudo apt-get install libhdf5-serial-dev
 sudo ./setup.sh -i
 source ./.env/bin/activate
 cd ~
-git clone https://github.com/liquidmind313/codename_313.git
 cd ~/codename_313/
 sudo cp config.json ../freqtrade
 sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
@@ -28,4 +27,24 @@ cd ~/freqtrade/
 wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.11/freqtrade-proxy-linux-arm64
 sudo chmod +x freqtrade-proxy-linux-arm64
 cd /etc/systemd/system
-sudo nano prox.service
+echo "[Unit]
+Description=proxy freq autostart
+StartLimitIntervalSec=30
+StartLimitBurst=2
+FailureAction=reboot
+
+[Service]
+User=root
+Type=simple
+ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 -port 8089
+Restart=always
+RemainAfterExit=yes
+RestartSec=5
+Restart=on-failure
+ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
+
+[Install]
+WantedBy=multi-user.target" > prox.service
+sudo systemctl daemon-reload
+sudo systemctl start prox.service
+
