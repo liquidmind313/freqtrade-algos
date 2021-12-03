@@ -60,8 +60,15 @@
 
 # starting the bot
 37. ```freqtrade trade --strategy NostalgiaForInfinityX```
-38. press ```ctrl+a+d```
+38. ```freqtrade trade --strategy ClucHAnix```
+39. ```freqtrade trade --strategy BB_RPB_TSL```
+40. ```freqtrade trade --strategy Combined_NFIv7_SMA```
+41. ```freqtrade trade --strategy ClucHAnix_BB_RPB_TraNz```
+42. press ```ctrl+a+d```
 # check telegram for status and start
+
+# maximum number of user processes 
+```ulimit -s unlimited```
 
 # (extra "forcebuy" function)
 example telegram command:
@@ -70,8 +77,8 @@ example telegram command:
 # profit and dry-run results:
 http://hippocritical.ddns.net:3000/
  
+ 
 # freqtrade-kucoin-proxy
-
 ### download
 1. ```cd ~/freqtrade/```
 2. ```wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.11/freqtrade-proxy-linux-arm64```
