@@ -1,4 +1,3 @@
-sudo systemctl daemon-reload
 sudo systemctl start prox.service
 screen
 cd ~/freqtrade/
