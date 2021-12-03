@@ -1,5 +1,7 @@
-*for vm setup 1vcpu 2gb ram 10gb hdd recommended - ubuntu lts*  
-*kucoin ref -20%: https://www.kucoin.com/ucenter/signup?rcode=r3AP4HF 
+# royal setup (All in one)
+1.     ```git clone https://github.com/liquidmind313/codename_313.git```
+2. run ```sudo bash royal_setup_arm64.sh```
+3. run ```
  
 
 # download
