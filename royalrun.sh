@@ -1,11 +1,14 @@
+cd ~
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
-git clone https://github.com/freqtrade/freqtrade.git ../
+git clone https://github.com/freqtrade/freqtrade.git 
 cd ~/freqtrade/
 git checkout stable
+y [answer] |./libhdf5-serial-dev
+y [answer] |./install
 sudo apt-get install libhdf5-serial-dev
+y [answer] |./setup.sh
 sudo ./setup.sh -i
-source ./.env/bin/activate
 cd ~
 cd ~/codename_313/
 sudo cp config.json ../freqtrade
@@ -13,13 +16,18 @@ sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
 sudo cp Combined_NFIv7_SMA.py ../freqtrade/user_data/strategies
 sudo cp BB_RPB_TSL_ClucHAnix_BB_RPB_MOD_CTT_Dynamic_Offsets_COMBINED_MOD_TraNz.py ../freqtrade/user_data/strategies
 sudo apt update
+y [answer] |./install
 sudo apt install nano
+y [answer] |./install
 sudo apt-get install screen
 cd ~/freqtrade/
 sudo python3 -m venv .env
 source .env/bin/activate
+y [answer] |./install
 sudo python3 -m pip install — upgrade pip
+y [answer] |./install
 sudo python3 -m pip install -e .
+y [answer] |./install
 pip install pandas_ta
 sudo timedatectl set-timezone Asia/Tokyo
 sudo ulimit -s unlimited
@@ -33,6 +41,7 @@ StartLimitIntervalSec=30
 StartLimitBurst=2
 FailureAction=reboot
 
+
 [Service]
 User=root
 Type=simple
@@ -45,6 +54,6 @@ ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
 
 [Install]
 WantedBy=multi-user.target" > prox.service
-sudo systemctl daemon-reload
+cd ~
+systemctl daemon-reload
 sudo systemctl start prox.service
-
