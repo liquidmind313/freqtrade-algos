@@ -9,11 +9,15 @@
 4. ```cd freqtrade```
 5. ```git checkout stable```
 
+
 # (ARM cpu only!) fix issue with hdf5 for setup.sh  
-sudo apt-get install libhdf5-serial-dev
+```sudo apt-get install libhdf5-serial-dev```
 
 # install freqtrade from scratch
 6. ```sudo ./setup.sh -i```
+
+# (for update only!)
+```sudo ./setup.sh --update```
 
 # then activate your .env
 7. ```source ./.env/bin/activate```
