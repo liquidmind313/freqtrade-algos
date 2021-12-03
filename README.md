@@ -1,8 +1,11 @@
-# royal setup (All in one)
+# royal setup (all in one)
 1.     ```git clone https://github.com/liquidmind313/codename_313.git```
 2. run ```sudo bash royal_setup_arm64.sh```
-3. run ```
- 
+# environment and strategie runner
+4. run ```run_strat_env.sh``` * mod the strategie name in it before running it!
+
+--------------------------------------------------------------------------------------
+
 
 # download
 1. ```sudo apt-get update``` 
