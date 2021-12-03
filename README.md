@@ -1,8 +1,8 @@
 # royal setup (all in one)
 1. ```git clone https://github.com/liquidmind313/codename_313.git```
 2. run ```sudo bash royal_setup_arm64.sh```
-# environment and strategie runner
-4. run ```run_strat_env.sh``` * mod the strategie name in it before running it!
+# environment and bot start
+4. run ```sudo bash codename_313/run_strat_env.sh``` * mod the strategie name in it before running it!
 
 --------------------------------------------------------------------------------------
 
