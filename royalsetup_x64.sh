@@ -10,7 +10,7 @@ cd ~/freqtrade/
 git checkout stable
 sudo ./setup.sh -i
 cd ~
-cd ~/codename_313/
+cd ~/codename313/
 sudo cp config.json ../freqtrade
 sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
 sudo cp BB_RPB_TSL.py ../freqtrade/user_data/strategies
