@@ -1,7 +1,6 @@
-//setup of freqtrade with pre modded config, strategies and proxy
-//ubuntu amd - intel x64 version 
-//made by @liquidmind313
-
+#setup of freqtrade with pre modded config, strategies and proxy
+#ubuntu amd/intel x64 version 
+#made by @liquidmind313
 cd ~
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
