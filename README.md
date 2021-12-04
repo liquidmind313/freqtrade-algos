@@ -2,8 +2,8 @@
 1. ```git clone https://github.com/liquidmind313/codename313.git```
 2. for arm x64 ```sudo bash royalsetup_arm64.sh```
 4. for intel/amd x64 ```sudo bash royalsetup_x64.sh```
-# environment and bot start
-4. run ```sudo bash run_strat_env.sh``` * mod the strategie name in it before running it!
+# environment and bot start (not tested yet)
+4. run ```sudo bash run_strat_env.sh``` * mod the strategy name in it, before running it! 
 
 --------------------------------------------------------------------------------------
 # step by step install method:
