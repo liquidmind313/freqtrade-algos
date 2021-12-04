@@ -1,5 +1,5 @@
 # royal setup (all in one)
-1. ```git clone https://github.com/liquidmind313/codename_313.git```
+1. ```git clone https://github.com/liquidmind313/codename313.git```
 2. for arm x64 ```sudo bash royalsetup_arm64.sh```
 4. for intel/amd x64 ```sudo bash royalsetup_x64.sh```
 # environment and bot start
@@ -33,7 +33,7 @@
 
 # strategy installation
 9. ```cd ~```
-10. ```git clone https://github.com/liquidmind313/codename_313.git```
+10. ```git clone https://github.com/liquidmind313/codename313.git```
 11. ```cd codename_313/ XY```
 12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
 
@@ -43,7 +43,7 @@
 15. ```cd```
 
 # copy over the config file !
-15. ```cd ~/codename_313/```
+15. ```cd ~/codename313/```
 16. ```sudo cp config.json ../freqtrade```
 17. paste in your API and Telegram keys
 18. ```ctrl+x,s``` 
