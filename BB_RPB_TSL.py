@@ -1,4 +1,4 @@
-# --- Do not remove these libs ---
+# --- Do not remove these libs --- ## tested on btc drop live 2021.11.28 - 2021.12.05 performs great!
 import freqtrade.vendor.qtpylib.indicators as qtpylib
 import numpy as np
 import talib.abstract as ta
