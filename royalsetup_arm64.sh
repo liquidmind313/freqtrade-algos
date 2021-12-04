@@ -14,6 +14,7 @@ cd ~
 cd ~/codename_313/
 sudo cp config.json ../freqtrade
 sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
+sudo cp BB_RPB_TSL.py ../freqtrade/user_data/strategies
 sudo cp Combined_NFIv7_SMA.py ../freqtrade/user_data/strategies
 sudo cp BB_RPB_TSL_ClucHAnix_BB_RPB_MOD_CTT_Dynamic_Offsets_COMBINED_MOD_TraNz.py ../freqtrade/user_data/strategies
 sudo apt update
