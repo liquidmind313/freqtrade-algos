@@ -144,5 +144,5 @@ WantedBy=multi-user.target
             "enableRateLimit": false,
             "timeout": 60000
 ```
-### Author for the proxy: 
+### Author of the proxy: 
 https://github.com/mikekonan/freqtrade-proxy
