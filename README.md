@@ -6,7 +6,7 @@
 4. run ```sudo bash codename_313/run_strat_env.sh``` * mod the strategie name in it before running it!
 
 --------------------------------------------------------------------------------------
-step by step install method:
+#step by step install method:
 
 # download
 1. ```sudo apt-get update``` 
