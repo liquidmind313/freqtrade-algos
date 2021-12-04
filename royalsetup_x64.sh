@@ -1,5 +1,5 @@
 //setup of freqtrade with pre modded config, strategies and proxy
-//ubuntu x64 version 
+//ubuntu amd - intel x64 version 
 //made by @liquidmind313
 
 cd ~
