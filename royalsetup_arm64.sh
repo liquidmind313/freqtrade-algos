@@ -1,6 +1,6 @@
-#setup of freqtrade with pre modded config, strategies and proxy
-#ubuntu arm64 version 
-#made by @liquidmind313
+## setup of freqtrade with pre modded config, strategies and proxy
+## ubuntu arm64 version 
+## made by @liquidmind313
 cd ~
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
@@ -9,7 +9,6 @@ cd ~/freqtrade/
 git checkout stable
 sudo apt-get install libhdf5-serial-dev
 sudo ./setup.sh -i
-cd ~
 cd ~/codename313/
 sudo cp config.json ../freqtrade
 sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
@@ -27,7 +26,6 @@ sudo python3 -m pip install -e .
 pip install pandas_ta
 sudo timedatectl set-timezone Asia/Tokyo
 sudo ulimit -s unlimited
-cd ~/freqtrade/
 wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freqtrade-proxy-linux-arm64
 sudo chmod +x freqtrade-proxy-linux-arm64
 cd /etc/systemd/system
@@ -48,7 +46,7 @@ ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
 
 [Install]
 WantedBy=multi-user.target" > prox.service
-cd ~
+cd ~/freqtrade/
 sudo systemctl daemon-reload
 sudo systemctl enable prox.service
 sudo systemctl start prox.service
