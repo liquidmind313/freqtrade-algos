@@ -51,8 +51,8 @@
             "timeout": 60000,
             "urls": {
                 "api": {
-                    "public": "http://127.0.0.1:8089/kucoin",
-                    "private": "http://127.0.0.1:8089/kucoin"
+                    "public": "http://127.0.0.1:8080/kucoin",
+                    "private": "http://127.0.0.1:8080/kucoin"
                 }
             }
         },
@@ -139,7 +139,7 @@
         "chat_id": " ",
     },
     "api_server": {
-        "enabled": true,
+        "enabled": false,
         "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
         "verbosity": "error",
