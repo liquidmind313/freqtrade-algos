@@ -80,6 +80,7 @@
             // shitty performers on strats
             "(TLOS|KEEP|AVA|NKN|MLN|AAVE|LAYER|SUKU|TKY|AOA|SUTER|TCP|INTER|HTR|SOLVE|CIX100|ETHO|ZCX|DINO|MXW|DAPPT|ONT|XDC|XDB|GENS|EOS)/.*",
             "(STX|POLK|CHR|XYO|VEGA|KRL|VIDT|HAI|OXT|AI|NORD|EDG|JAR|BTCST|XSR|CGG|VSYS|CBC|SCLP|FEAR|GMEE|FORESTPLUS|TARA|LOCG|SWASH|CGG|HTR|XNL|SENSO)/.",
+            "(LYXE|NUM|GALAX|NAKA|FLUX|AIOZ|VEED|RNDR|TLM|DREAMS|SOUL|WILD|SAND|NKR|KMA|GLQ|GMB|TARA|LOCG|PBX|CGG|GMEE|HORD|FKX|ZKT|DIVI|BAX|MTV|BEPRO|ALICE|BEPRO|RMRK/.",
               ]
     },
     "pairlists": [
@@ -141,8 +142,8 @@
             "status": "silent",
             "warning": "silent",
             "startup": "silent",
-            "buy": "silent",
-            "sell": "silent",
+            "buy": "off",
+            "sell": "off",
             "buy_cancel": "silent",
             "sell_cancel": "silent",
             "buy_fill": "silent",
