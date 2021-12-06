@@ -1,12 +1,11 @@
-cd ~
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
 git clone https://github.com/freqtrade/freqtrade.git 
-cd ~/freqtrade/
+cd freqtrade
 git checkout stable
 sudo apt-get install libhdf5-serial-dev
 sudo ./setup.sh -i
-cd ~/codename313/
+cd ../codename313
 sudo cp config.json ../freqtrade
 sudo cp NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies
 sudo cp BB_RPB_TSL.py ../freqtrade/user_data/strategies
@@ -15,7 +14,7 @@ sudo cp BB_RPB_TSL_ClucHAnix_BB_RPB_MOD_CTT_Dynamic_Offsets_COMBINED_MOD_TraNz.p
 sudo apt update
 sudo apt install nano
 sudo apt-get install screen
-cd ~/freqtrade/
+cd ../freqtrade
 sudo python3 -m venv .env
 source .env/bin/activate
 sudo python3 -m pip install — upgrade pip
