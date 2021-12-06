@@ -68,11 +68,12 @@
 37. ```freqtrade trade --strategy NostalgiaForInfinityX```
 38. ```freqtrade trade --strategy ClucHAnix```
 39. ```freqtrade trade --strategy BB_RPB_TSL```
-40. ```freqtrade trade --strategy NASOSv5_mod1```
-41. ```freqtrade trade --strategy ClucHAnix_BB_RPB_MOD```
-42. ```freqtrade trade --strategy Combined_NFIv7_SMA```
-43. ```freqtrade trade --strategy ClucHAnix_BB_RPB_TraNz```
-44. press ```ctrl+a+d```
+40. ```freqtrade trade --strategy BB_RPB_TSL_SMA_Tranz_TB_MOD```
+41. ```freqtrade trade --strategy NASOSv5_mod1```
+42. ```freqtrade trade --strategy ClucHAnix_BB_RPB_MOD```
+43. ```freqtrade trade --strategy Combined_NFIv7_SMA```
+44. ```freqtrade trade --strategy ClucHAnix_BB_RPB_TraNz```
+45. press ```ctrl+a+d```
 # check telegram for status and start
 
 # maximum number of user processes 
