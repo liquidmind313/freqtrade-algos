@@ -125,15 +125,15 @@
             ["/reload_config","/help","/start","/stop"]
         ],
         "notification_settings": {
-            "status": "off",
-            "warning": "off",
-            "startup": "off",
-            "buy": "off",
-            "sell": "off",
-            "buy_cancel": "off",
-            "sell_cancel": "off",
-            "buy_fill": "off",
-            "sell_fill": "off"
+            "status": "silent",
+            "warning": "silent",
+            "startup": "silent",
+            "buy": "silent",
+            "sell": "silent",
+            "buy_cancel": "silent",
+            "sell_cancel": "silent",
+            "buy_fill": "silent",
+            "sell_fill": "silent"
         },
         "balance_dust_level": 0.01
     },
