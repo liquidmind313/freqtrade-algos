@@ -88,7 +88,7 @@ http://hippocritical.ddns.net:3000/
 # freqtrade-kucoin-proxy
 ### download
 1. ```cd ~/freqtrade/```
-2. ```wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.11/freqtrade-proxy-linux-arm64```
+2. ```wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freqtrade-proxy-linux-arm64```
 3. ```sudo chmod +x freqtrade-proxy-linux-arm64```
 
 ### making it as service for autostart
