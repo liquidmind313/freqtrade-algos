@@ -27,7 +27,7 @@ pip install pandas_ta
 sudo timedatectl set-timezone Asia/Tokyo
 sudo ulimit -s unlimited
 cd ~/freqtrade/
-wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.11/freqtrade-proxy-linux-amd64
+wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freqtrade-proxy-linux-amd64
 sudo chmod +x freqtrade-proxy-linux-amd64
 cd /etc/systemd/system
 echo "[Unit]
