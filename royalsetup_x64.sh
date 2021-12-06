@@ -32,18 +32,16 @@ sudo chmod +x freqtrade-proxy-linux-amd64
 cd /etc/systemd/system
 echo "[Unit]
 Description=proxy freq autostart
-StartLimitIntervalSec=30
-StartLimitBurst=2
-FailureAction=reboot
-
+StartLimitIntervalSec=33
+StartLimitBurst=3
 
 [Service]
 User=root
 Type=simple
-ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-amd64 -port 8089
+ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-amd64
 Restart=always
 RemainAfterExit=yes
-RestartSec=5
+RestartSec=10
 Restart=on-failure
 ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-amd64 stop
 
@@ -51,4 +49,5 @@ ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-amd64 stop
 WantedBy=multi-user.target" > prox.service
 cd ~
 systemctl daemon-reload
+sudo systemctl enable prox.service
 sudo systemctl start prox.service
