@@ -32,7 +32,7 @@ wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freq
 sudo chmod +x freqtrade-proxy-linux-arm64
 cd /etc/systemd/system
 echo "[Unit]
-Description=proxy freq autostart
+Description=proxy autostart for freqtrade kucoin
 StartLimitIntervalSec=33
 StartLimitBurst=3
 
