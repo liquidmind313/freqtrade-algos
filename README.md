@@ -1,5 +1,5 @@
 # royal setup (all in one)
-1. ```git clone https://github.com/liquidmind313/codename313.git```
+1. ```sudo git clone https://github.com/liquidmind313/codename313.git```
 2. for arm x64 ```sudo bash royalsetup_arm64.sh```
 4. for intel/amd x64 ```sudo bash royalsetup_x64.sh```
 # environment and bot start (not tested yet)
