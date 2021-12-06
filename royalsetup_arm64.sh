@@ -42,7 +42,8 @@ ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
 
 [Install]
 WantedBy=multi-user.target" > prox.service
-cd ~/freqtrade/
+cd 
+cd freqtrade
 sudo systemctl daemon-reload
 sudo systemctl enable prox.service
 sudo systemctl start prox.service
