@@ -1,6 +1,6 @@
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
-git clone https://github.com/freqtrade/freqtrade.git 
+sudo git clone https://github.com/freqtrade/freqtrade.git 
 cd freqtrade
 git checkout stable
 sudo apt-get install libhdf5-serial-dev
