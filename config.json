@@ -152,8 +152,6 @@
             "sell_fill": "silent"
         },
         "balance_dust_level": 0.01
-        },
-        "balance_dust_level": 0.01
     },
     "api_server": {
         "enabled": false,
