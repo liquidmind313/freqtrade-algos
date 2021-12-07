@@ -47,3 +47,5 @@ cd ~/freqtrade/
 sudo systemctl daemon-reload
 sudo systemctl enable prox.service
 sudo systemctl start prox.service
+cd ~
+sudo chmod 777 /home/ubuntu/freqtrade/
