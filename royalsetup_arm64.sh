@@ -19,13 +19,13 @@ sudo python3 -m venv .env
 source .env/bin/activate
 sudo python3 -m pip install — upgrade pip
 sudo python3 -m pip install -e .
-pip install pandas_ta
+sudo pip install pandas_ta
 sudo timedatectl set-timezone Asia/Tokyo
 sudo ulimit -s unlimited
 wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freqtrade-proxy-linux-arm64
 sudo chmod +x freqtrade-proxy-linux-arm64
 cd /etc/systemd/system
-echo "[Unit]
+sudo echo "[Unit]
 Description=proxy autostart for freqtrade kucoin
 StartLimitIntervalSec=33
 StartLimitBurst=3
