@@ -110,15 +110,14 @@ http://hippocritical.ddns.net:3000/
 Description=proxy freq autostart
 StartLimitIntervalSec=30
 StartLimitBurst=2
-FailureAction=reboot
 
 [Service]
 User=root
 Type=simple
-ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 -port 8089
+ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 
 Restart=always
 RemainAfterExit=yes
-RestartSec=5
+RestartSec=10
 Restart=on-failure
 ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
 
