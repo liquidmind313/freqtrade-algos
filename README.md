@@ -32,10 +32,15 @@
 8. ```freqtrade new-config -c config.json```
 
 # strategy installation
-9. ```cd ~```
-10. ```git clone https://github.com/liquidmind313/codename313.git```
-11. ```cd codename_313/ XY```
-12. ```sudo cp strategy_name.py ../../freqtrade/user_data/strategies/```
+9.  ```git clone https://github.com/liquidmind313/codename313.git```
+10. ```cd ~/codename313/```
+11. select:
+12. ```sudo cp codename_313/BB_RPB_TSL_ClucHAnix_BB_RPB_MOD_CTT_Dynamic_Offsets_COMBINED_MOD_TraNz.py ../freqtrade/user_data/strategies```
+13. ```sudo cp codename_313/BB_RPB_TSL_SMA_Tranz.py ../freqtrade/user_data/strategies```
+14. ```sudo cp codename_313/ClucHAnix.py ../freqtrade/user_data/strategies```
+15. ```sudo cp codename_313/Combined_NFIv7_SMA.py ../freqtrade/user_data/strategies```
+16. ```sudo cp codename_313/NASOSv5_mod1.py ../freqtrade/user_data/strategies```
+17. ```sudo cp codename_313/NFIXMod1.3_TraNz.py ../freqtrade/user_data/strategies```
 
 # install nano
 13. ```sudo apt update```
