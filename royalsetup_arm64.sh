@@ -1,3 +1,4 @@
+cd
 sudo apt-get update
 sudo apt install -y python3-pip python3-venv python3-dev python3-pandas git
 sudo git clone https://github.com/freqtrade/freqtrade.git 
