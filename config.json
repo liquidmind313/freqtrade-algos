@@ -63,17 +63,17 @@
         "pair_whitelist": [
         ],
        "pair_blacklist": [
-            // Leverage tokens
+            // leveraged stuff / better not too touch without a StaticPairList method
             ".*(3|3L|3S)/.*",
-            // Fiat
+            // fiat shit
             "(AUD|EUR|GBP|CHF|CAD|JPY)/.*",
-            // Stable tokens
+            // stable coins
             "(BUSD|USDT|TUSD|USDC|CUSDT|DAI|USDN)/.*",
-            // FAN Tokens
+            // shit (fan) Tokens
             "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
-            // Other Coins
+            // some shits
             "(SLP|XVS|MEM|AMPL|XYM|POLX|CARR|SKEY|MASK|KLV|TLOS|JAR|BTCST|SUPER|LAYER|CTSI|MKR|HYDRA|DEGO)/.*",
-            // Other bs
+            // other bs
             "(LPT|LRC|LTX|MIR|STMX|SXP|ZEC|VELO|SUN|CIRUS|REVV|XSR|VSYS|CBC|SCLP|ANKR)/.*",
             // shitty performance in most of the strategies
             "(TLOS|KEEP|AVA|NKN|MLN|AAVE|LAYER|SUKU|TKY|AOA|SUTER|TCP|INTER|HTR|SOLVE|CIX100|ETHO|ZCX|DINO|MXW|DAPPT|ONT|XDC|XDB|GENS|EOS)/.*",
