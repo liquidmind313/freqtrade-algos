@@ -35,7 +35,7 @@
 9. ```cd ~```
 10. ```git clone https://github.com/liquidmind313/codename313.git```
 11. ```cd codename_313/ XY```
-12. ```sudo cp NostalgiaForInfinityNext.py ../../freqtrade/user_data/strategies/```
+12. ```sudo cp strategy_name.py ../../freqtrade/user_data/strategies/```
 
 # install nano
 13. ```sudo apt update```
@@ -65,7 +65,7 @@
 ```sudo timedatectl set-timezone Asia/Tokyo```
 
 # starting the bot
-34. ```sudo screen```
+34. ```screen```
 35. ```sudo python3 -m venv .env ```
 36. ```source .env/bin/activate ```
 37. ```freqtrade trade --strategy NostalgiaForInfinityX```
@@ -141,8 +141,8 @@ WantedBy=multi-user.target
             "timeout": 60000,
             "urls": {
                 "api": {
-                    "public": "http://127.0.0.1:8089/kucoin",
-                    "private": "http://127.0.0.1:8089/kucoin"
+                    "public": "http://127.0.0.1:8080/kucoin",
+                    "private": "http://127.0.0.1:8080/kucoin"
                 }
             }
         },
