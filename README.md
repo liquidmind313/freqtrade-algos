@@ -65,7 +65,7 @@
 ```sudo timedatectl set-timezone Asia/Tokyo```
 
 # starting the bot
-34. ```screen```
+34. ```sudo screen```
 35. ```sudo python3 -m venv .env ```
 36. ```source .env/bin/activate ```
 37. ```freqtrade trade --strategy NostalgiaForInfinityX```
