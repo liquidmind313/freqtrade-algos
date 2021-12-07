@@ -158,7 +158,7 @@
         "enabled": true,
         "token": "  ",
         "chat_id": " ",
-"keyboard": [
+        "keyboard": [
             ["/profit","/balance","/status table","/daily"],
             ["/performance","/logs","/show_config","/trades"],
             ["/reload_config","/help","/start","/stop"]
