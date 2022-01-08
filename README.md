@@ -69,6 +69,12 @@
 # time zone
 ```sudo timedatectl set-timezone Asia/Tokyo```
 
+### fixing finta issues on venv
+1. ```source ./.env/bin/activate```
+2. ```sudo chown -R ubuntu:ubuntu /home/ubuntu/freqtrade/```
+3. ```pip install finta```
+4. ```pip list -v```
+
 # starting the bot
 34. ```screen```
 35. ```sudo python3 -m venv .env ```
@@ -156,10 +162,3 @@ WantedBy=multi-user.target
 ```
 ### Author of the proxy: 
 https://github.com/mikekonan/freqtrade-proxy
-
-### fixing finta issues on venv
-```source ./.env/bin/activate```
-```sudo chown -R ubuntu:ubuntu /home/ubuntu/freqtrade/```
-```pip install finta```
-```pip list -v```
-
