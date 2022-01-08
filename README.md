@@ -156,3 +156,10 @@ WantedBy=multi-user.target
 ```
 ### Author of the proxy: 
 https://github.com/mikekonan/freqtrade-proxy
+
+### fixing finta issues on venv
+```source ./.env/bin/activate```
+```sudo chown -R ubuntu:ubuntu /home/ubuntu/freqtrade/```
+```pip install finta```
+```pip list -v```
+
