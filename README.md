@@ -104,14 +104,15 @@ http://hippocritical.ddns.net:3000/
 # freqtrade-kucoin-proxy
 ### download
 1. ```cd ~/freqtrade/```
-2. ```wget https://github.com/mikekonan/freqtrade-proxy/releases/download/v1.0.12/freqtrade-proxy-linux-arm64```
-3. ```sudo chmod +x freqtrade-proxy-linux-arm64```
+2. ```wget https://github.com/mikekonan/exchange-proxy/releases/download/v1.2.1/exchange-proxy_1.2.1_linux_arm64.tar.gz```
+3. ```tar -xf exchange-proxy_1.2.1_linux_arm64.tar.gz```
+4. ```sudo chmod +x exchange-proxy```
 
 ### making it as service for autostart
 1. ```cd /etc/systemd/system``` 
 2. ```sudo nano prox.service``` 
 3. ```copy the text below, in it```
-```
+
 [Unit]
 Description=proxy freq autostart
 StartLimitIntervalSec=30
@@ -120,16 +121,16 @@ StartLimitBurst=2
 [Service]
 User=root
 Type=simple
-ExecStart=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 
+ExecStart=/home/ubuntu/freqtrade/exchange-proxy
 Restart=always
 RemainAfterExit=yes
 RestartSec=10
 Restart=on-failure
-ExecStop=/home/ubuntu/freqtrade/freqtrade-proxy-linux-arm64 stop
+ExecStop=/home/ubuntu/freqtrade/exchange-proxy stop
 
 [Install]
 WantedBy=multi-user.target
-```
+
 4. ```ctrl+s,ctrl+x```
 5. ```sudo systemctl daemon-reload```
 
