@@ -79,7 +79,7 @@
             "(TLOS|KEEP|AVA|NKN|MLN|AAVE|LAYER|SUKU|TKY|AOA|SUTER|TCP|INTER|HTR|SOLVE|CIX100|ETHO|ZCX|DINO|MXW|DAPPT|ONT|XDC|XDB|GENS|EOS)/.*",
             "(STX|POLK|CHR|XYO|VEGA|KRL|VIDT|HAI|OXT|AI|NORD|EDG|JAR|BTCST|XSR|CGG|VSYS|CBC|SCLP|FEAR|GMEE|FORESTPLUS|TARA|LOCG|SWASH|CGG|HTR|XNL|SENSO)/.",
             "(TIDAL|PYR|DPR|XNL|GMEE|ALICE|HORD|HTR|MNW|NAKA|BZRX|GLQ|SHILL|FKX|FEAR|SOUL|PNT|LOCG|AGIX|TVK|POLS|RLC|GODS|VID|MNST|PBX|NAKA|ZORT|1EARTH|SENSO)/.", 
-            "(GLQ|ETHO|STX|EOS|HAKA|BAT|ANKR|GENS|TKY)/.*,
+            "(GLQ|ETHO|STX|EOS|HAKA|BAT|ANKR|GENS|TKY)/.*",
             
               ]
     },
@@ -136,10 +136,10 @@
     },
     "telegram": {
         "enabled": true,
-        "token": "  ",
-        "chat_id": " ",
+        "token": "1637485041:AAGp0rcQdEVf-tQcnfBcat0mMFE8nxJUFb0",
+        "chat_id": "-1001706986687",
 "keyboard": [
-            ["/profit","/balance",,"/daily"],
+            ["/profit","/balance","/daily"],
             ["/performance","/logs","/trades"],
             ["/status table"]
         ],
